@@ -42,7 +42,7 @@ fn buy_asset(asset_id: AssetId) -> String {
         let mut state = marketplace.borrow_mut();
         if let Some(price) = state.assets.remove(&asset_id) {
             // Simulate reverse gas payment
-            let fee_wallet = "rwlgt-4zjif-aaaaa-aaaaa-cai"; // Replace with the actual wallet ID
+            let fee_wallet = "b77ix-eeaaa-aaaaa-qaada-cai"; 
             let fee_amount: u64 = 10; // Hardcoded transaction fee
 
             ic_cdk::print(format!(
